@@ -19,6 +19,9 @@
                     alert('Sua cidade é ' + dados.city + ' no bairro ' + dados.neighborhood + ' na rua ' + dados.street);
                 });
             })
+            .catch(function(erro) { 
+                console.log('Ocorreu um erro ao buscar os dados ', erro);
+            });
         }
     </script>
 </body>
