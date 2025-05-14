@@ -12,14 +12,14 @@
             let cep = prompt('Qual CEP deseja buscar?');
             let url = 'https://brasilapi.com.br/api/cep/v1/' + cep;
 
-            fetch(url) 
-            .then(function(responsta) { 
-                responsta.json().then(function(dados) { 
+            fetch(url) // Busca o endereço
+            .then(function(responsta) { // Depois de buscar o endereço, converte para JSON
+                responsta.json().then(function(dados) { // Depois de converter para JSON, mostra os dados
                     console.log(dados);
                     alert('Sua cidade é ' + dados.city + ' no bairro ' + dados.neighborhood + ' na rua ' + dados.street);
                 });
             })
-            .catch(function(erro) { 
+            .catch(function(erro) { // Se der erro, mostra o erro
                 console.log('Ocorreu um erro ao buscar os dados ', erro);
             });
         }
