@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JS Básico</title>
+</head>
+<body>
+    <h1>Curso JS Básico - Semana 3</h1>
+    <script>
+        lista = [];
+        novoItem = prompt('Digite o nome do item ou - se não quiser adicionar mais items:');
+        while (novoItem != '-'){
+            lista.push(novoItem);
+            novoItem = prompt('Digite o nome do item ou - se não quiser adicionar mais items:');
+        }
+        if (lista.length == 0){ // Se a lista estiver vazia, ou seja, tamanho = 0
+            alert('A lista está vazia!');
+        } else {
+            alert('Você deve comprar:');
+            for (i = 0; i < lista.length; i++){ // i funciona como um contador
+                alert(lista[i]);
+            }
+        }
+    </script>
+</body>
+</html>
