@@ -11,6 +11,13 @@
         function buscarCEP() {
             let cep = prompt('Qual CEP deseja buscar?');
             let url = 'https://brasilapi.com.br/api/cep/v1/' + cep;
+
+            fetch(url) 
+            .then(function(responsta) { 
+                responsta.json().then(function(dados) { 
+                    console.log(dados);
+                });
+            })
         }
     </script>
 </body>
