@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JS Avançado</title>
+</head>
+<body>
+    <h1>Curso JS Avançado - Semana 1</h1>
+    <script>
+        let lista = [ // Array de objetos
+            {'descrição': 'Estudar JS', 'local': 'Casa', 'hora': '10:00'},
+            {'descrição': 'Aprender JS', 'local': 'Casa', 'hora': '18:00'},
+            {'descrição': 'Fazer exercícios', 'local': 'Escola', 'hora': '16:00'}
+        ];
+        function addLista(descrição, local, hora) { // Função com parâmetros que correspondem aos atributos da lista
+            let novoElemento = { // Cria um novo objeto
+                'descrição': descrição, // Atributo descrição
+                'local': local, // Atributo local
+                'hora': hora // Atributo hora
+            };
+            lista.push(novoElemento);
+            console.log('Novo elemento adicionado:', novoElemento);
+        }
+    </script>
+</body>
+</html>
