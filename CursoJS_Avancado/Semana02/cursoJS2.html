@@ -19,6 +19,8 @@
                 document.getElementById('nameUser').innerText = 'Por favor, digite seu nome!';
             } else {
                 alert('Olá ' + nome + '!' + ' Seja bem-vindo(a)!');
+                document.getElementById('nameUser').innerText = 'Nome digitado:' + nome; // '.innerText' altera o texto do elemento com id 'nameUser'
+                document.getElementById('nameUser').innerHTML = '<b> Nome digitado: </b>' + nome; // '.innerHTML' altera e estiliza o texto do elemento com id 'nameUser'
             }
         }
     </script>
