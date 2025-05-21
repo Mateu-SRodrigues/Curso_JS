@@ -52,6 +52,8 @@
                 'cidade': document.getElementById('endereco_cidade').value,
                 'estado': document.getElementById('endereco_estado').value
             }
+
+            let meuArquivo = new Blob([JSON.stringify(dadosSalvar)], { type: "text/plain" }); // Cria um arquivo com os dados salvos
         }
     </script>
 </body>
