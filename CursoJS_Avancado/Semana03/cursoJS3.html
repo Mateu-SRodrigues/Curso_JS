@@ -31,6 +31,14 @@
             let fr = new FileReader(); // Cria o leitor de arquivos
             fr.onload = function(dadosArquivo) { // Essa função vai ser chamada quando o leitor de arquivos conseguir carregar o arquivo
                 let dados = JSON.parse(dadosArquivo.target.result); // Pega os dados do arquivo e transforma o resultado para um objeto JSON
+
+                // Coloca os dados, tal qual os do arquivo, nos inputs
+                document.getElementById('usuario nome').value = dados.nome;
+                document.getElementById('endereco_cep').value = dados.cep;
+                document.getElementById('endereco_rua').value = dados.rua;
+                document.getElementById('endereco_bairro').value = dados.bairro;
+                document.getElementById('endereco_cidade').value = dados.cidade;
+                document.getElementById('endereco_estado').value = dados.estado;
             }
         }
     </script>
