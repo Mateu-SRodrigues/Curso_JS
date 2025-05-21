@@ -44,6 +44,14 @@
         }
         function salvar() {
             let templink = document.createElement('a'); // Cria um link para baixar o arquivo
+            let dadosSalvar = { // Cria um objeto JSON com os dados salvos
+                'nome': document.getElementById('usuario nome').value,
+                'cep': document.getElementById('endereco_cep').value,
+                'rua': document.getElementById('endereco_rua').value,
+                'bairro': document.getElementById('endereco_bairro').value,
+                'cidade': document.getElementById('endereco_cidade').value,
+                'estado': document.getElementById('endereco_estado').value
+            }
         }
     </script>
 </body>
