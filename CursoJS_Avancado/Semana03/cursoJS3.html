@@ -54,6 +54,7 @@
             }
 
             let meuArquivo = new Blob([JSON.stringify(dadosSalvar)], { type: "text/plain" }); // Cria um arquivo com os dados salvos
+            templink.setAttribute('href', URL.createObjectURL(meuArquivo)); // Define o link para o arquivo
         }
     </script>
 </body>
