@@ -15,6 +15,7 @@
         function buscarCEP() {
             let cep = document.getElementById('cep').value;
             document.getElementById('endereco').innerText = "Buscando...";
+            fetch("https://brasilapi.com.br/api/cep/v1/"+cep) // A função fetch faz uma requisição HTTP para a URL especificada
         }
     </script>
 </body>
