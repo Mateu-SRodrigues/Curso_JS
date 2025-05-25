@@ -18,6 +18,10 @@
             fetch("https://brasilapi.com.br/api/cep/v1/"+cep) // A função fetch faz uma requisição HTTP para a URL especificada
             .then(function(response){ // A função 'then' recebe uma função de callback(instrução) que será executada quando a resposta da requisição for recebida
                 // A variável 'response' contém a resposta da requisição 'fetch'
+                response.json().then(function(dados){ // A resposta é convertida para JSON e a função de callback(instrução) recebe os dados como argumento
+                    // A variável 'dados' contém os dados retornados pela API
+                    console.log(dados);
+                });
             })
         }
     </script>
