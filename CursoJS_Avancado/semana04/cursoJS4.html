@@ -21,6 +21,7 @@
                 response.json().then(function(dados){ // A resposta é convertida para JSON e a função de callback(instrução) recebe os dados como argumento
                     // A variável 'dados' contém os dados retornados pela API
                     console.log(dados);
+                    let endereco = dados.street + ", " + dados.neighborhood + ", " + dados.city + ", " + dados.state;
                 });
             })
         }
