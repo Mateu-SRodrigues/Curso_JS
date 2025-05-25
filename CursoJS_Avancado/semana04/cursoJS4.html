@@ -22,6 +22,7 @@
                     // A variável 'dados' contém os dados retornados pela API
                     console.log(dados);
                     let endereco = dados.street + ", " + dados.neighborhood + ", " + dados.city + ", " + dados.state;
+                    document.getElementById('endereco').innerText = endereco;
                 });
             })
         }
