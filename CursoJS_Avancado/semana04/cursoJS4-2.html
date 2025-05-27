@@ -39,6 +39,9 @@
                     document.getElementById('endereco_estado').value = endereco.state;
                 });
             })
+            .catch(function(){ // A função 'catch' recebe uma função de callback que será executada se ocorrer um erro na requisição
+                document.getElementById('endereco').innerText = "[ERRO]";
+            })
         }
     </script>
 </body>
