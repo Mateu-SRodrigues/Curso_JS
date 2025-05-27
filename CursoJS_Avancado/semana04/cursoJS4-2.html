@@ -27,6 +27,7 @@
         function buscarCEP() {
             let cep = document.getElementById('endereco_cep').value;
             let url = 'https://brasilapi.com.br/api/cep/v1/' + cep;
+            fetch(url) // A função fetch faz uma requisição HTTP para a URL especificada
         }
     </script>
 </body>
