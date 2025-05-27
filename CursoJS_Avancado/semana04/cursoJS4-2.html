@@ -28,6 +28,10 @@
             let cep = document.getElementById('endereco_cep').value;
             let url = 'https://brasilapi.com.br/api/cep/v1/' + cep;
             fetch(url) // A função fetch faz uma requisição HTTP para a URL especificada
+            .then(function(dados){ // A função 'then' recebe uma função de callback(instrução) que será executada quando a resposta da requisição for recebida
+                // A variável 'response' contém a resposta da requisição 'fetch'
+                dados.json()
+            })
         }
     </script>
 </body>
